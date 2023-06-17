@@ -5,9 +5,9 @@ const Home = () => {
     const [data, setData] = useState([]);
 
     useEffect(()=> {
-        axios.get("https://dev-example.sanbercloud.com/api/job-vacancy")
+        axios.get("https://ba06-182-253-194-51.ngrok-free.app/api/article")
         .then((res) => {
-            let hasil = res.data.data;
+            let hasil = res.data.getArticle;
             setData(hasil);
             console.log(hasil);
         })
@@ -47,18 +47,18 @@ const Home = () => {
                         <div key={element.id} className="shadow-2xl mb-[15%] md:mb-[10%] lg:mb-[7%] xl:mb-[5%] md:flex">
                             <div>
                                 <img
-                                    src={element.company_image_url}
-                                    alt={element.company_name}
+                                    src={element.foto}
+                                    alt={element.foto}
                                     className="h-[179px] w-[1000px] md:w-[240px]"
                                 />
                             </div>
 
                             <div className="w-[560px] justify-center ml-[1%] md:ml-[2rem] mt-[27px] h-[124px]">
                                 <p className="font-medium text-[20px]">
-                                    {element.company_name}
+                                    {element.title}
                                 </p>
                                 <article className="text-[#B6B6B6] text-[14px] mt-[10px] text-justify overflow-hidden w-[45%] h-[55%] md:w-[100%] md:h-[70%]">
-                                    {element.job_description}
+                                    {element.description}
                                 </article>
                             </div>
                         </div>
