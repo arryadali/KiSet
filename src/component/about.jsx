@@ -4,7 +4,7 @@ const About = () => {
     return(
         <section id="About">
             <div className="container">
-                <div className="w-[83%] m-auto mt-[4rem] ">
+                <div className="w-[83%] m-auto mt-[4rem]">
                     <article className="text-[20px] font-medium text-justify">
                         KISET ( Kita Sehat ) adalah Aplikasi KiSet ( Kita Sehat ) adalah salah satu website yang digunakan untuk mengetahui solusi penyembuhan dari berbagai penyakit yang diderita seperti batuk, pilek maupun yang lainnya. KiSet menawarkan pengguna untuk mempermudah dan mempercepat akses setiap orang dalam mendapatkan informasi mengenai penyakit yang diderita beserta solusi alternatif yang benar dalam penangananya. Dengan adanya aplikasi KiSet tersebut diharapkan dapat memberi pertolongan terhadap orang-orang yang disebabkan berbagai hal tidak dapat berkonsultasi dengan dokter maupun ahli medis secara langsung dengan tanpa harus mengunjungi rumah sakit atau tempat praktek dokter tersebut berada.  
                     </article>
@@ -17,7 +17,7 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className="flex gap-48 self-center justify-center mt-[46px]">
+                    <div className="flex gap-48 self-center justify-center mt-[46px] mb-[4rem]">
                         <section id="Arrya Dali Lesmana">
                             <div className="w-auto mt-4">
                                 <img src="../asset/arrya.png" width={150} alt="Arrya Dali Lesmana" className="rounded-full m-auto"/>

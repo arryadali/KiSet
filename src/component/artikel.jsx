@@ -30,7 +30,7 @@ const Artikel = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
             const response = await axios
-            .post("https://ba06-182-253-194-51.ngrok-free.app/api/article", {
+            .post("localhost:5000/api/article", {
                 judul: input.judul,
                 deskripsi: input.deskripsi,
                 foto: input.foto
@@ -74,7 +74,7 @@ const Artikel = () => {
                         name="deskripsi" 
                         value={input.description}
                         onChange={handleChange}
-                        className="block border-2 rounded-[10px] w-full h-[302px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>
+                        className="block border-2 rounded-[10px] w-full h-[62px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>
                     </div>
                     <button 
                     type="submit"

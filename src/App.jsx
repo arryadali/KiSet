@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./component/about";
 import Navbar from "./component/navbar";
 import Artikel from "./component/artikel";
+import DetailArtikel from "./component/detailartikel"
 
 const App = () => {
   return (
@@ -14,10 +15,11 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>}/>
         <Route path="/artikel" element={<Artikel/>} />
+        <Route path="/artikel/:id" element={<DetailArtikel/>} />
 
       </Routes>
-
     </BrowserRouter>
+    
   );
 }
 
