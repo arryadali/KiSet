@@ -60,7 +60,7 @@ const Home = () => {
                     <div className="pt-12">
                         <input 
                         type="text"
-                        placeholder="Search Box"
+                        placeholder="Search Here!"
                         value={searchTerm}
                         onChange={handleSearch}
                         className="rounded-[30px] w-[40%] h-[54px] px-6 focus:outline-white text-center"/>

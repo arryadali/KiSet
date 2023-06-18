@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Register = () => {
   return (
     <div className='container'>
       <div className='flex w-full mt-[5%]'>
@@ -21,25 +21,39 @@ const Login = () => {
         </div>
         <div className='w-[50%]'>
             <div>
-                <label className='block uppercase font-semibold text-[#666879]'>Alamat Email</label>
+                <label className='block uppercase font-semibold text-[#666879]'>Nama depan</label>
                 <input 
                 type="text"
                 className='border-2 w-[60%] h-[40px] rounded-[5px] mt-[2%] p-3'               
                 />
             </div>
             <div>
-                <label className='block uppercase font-semibold text-[#666879] mt-[3%]'>Kata sandi</label>
+                <label className='block uppercase font-semibold text-[#666879] mt-[3%]'>nama belakang</label>
+                <input 
+                type="text"
+                className='border-2 w-[60%] h-[40px] rounded-[5px] mt-[2%] p-3'               
+                />
+            </div>
+            <div>
+                <label className='block uppercase font-semibold text-[#666879] mt-[3%]'>alamat email</label>
+                <input 
+                type="text"
+                className='border-2 w-[60%] h-[40px] rounded-[5px] mt-[2%] p-3'               
+                />
+            </div>
+            <div>
+                <label className='block uppercase font-semibold text-[#666879] mt-[3%]'>kata sandi</label>
                 <input 
                 type="text"
                 className='border-2 w-[60%] h-[40px] rounded-[5px] mt-[2%] p-3'               
                 />
             </div>
             <button className='bg-[#010C80] mt-[5%]'>
-                <p className='uppercase font-bold bg-[#010C80] w-[460px] h-[55px] text-white pt-[3%]'>LOGIN</p>
+                <p className='uppercase font-bold bg-[#010C80] w-[460px] h-[55px] text-white pt-[3%]'>register</p>
             </button>
-            <Link to={"/register"}>
+            <Link to={"/login"}>
             <div>
-                <p className='ml-[26%] mt-[5%] text-[#6974F1] hover:text-[#4454FF]'>Register?</p>
+                <p className='ml-[22%] mt-[5%] text-[#6974F1] hover:text-[#4454FF]'>Sudah punya akun?</p>
             </div>
             </Link>
         </div>
@@ -48,4 +62,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default Register;

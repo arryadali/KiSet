@@ -6,6 +6,7 @@ import Navbar from "./component/navbar";
 import Artikel from "./component/artikel";
 import DetailArtikel from "./component/detailartikel";
 import Login from "./component/login";
+import Register from "./component/register";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path="/artikel" element={<Artikel/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
         <Route path="/artikel/:id" element={<DetailArtikel/>} />
 
       </Routes>

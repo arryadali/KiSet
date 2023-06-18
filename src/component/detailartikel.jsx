@@ -31,6 +31,18 @@ const Detailartikel = () => {
             <div className='pt-[18px] '>
                 <article className='text-justify text-[14px]'>{detailArtikel?.description}</article>
             </div>
+            <div className='pt-[18px] '>
+                <p className='font-medium text-[36px]'>Cara mencegah {detailArtikel?.title}!</p>
+            </div>
+            <div className='pt-[18px] '>
+                <article className='text-justify text-[14px]'>{detailArtikel?.cegah}</article>
+            </div>
+            <div className='pt-[18px] '>
+                <p className='font-medium text-[36px]'>Cara mengobati {detailArtikel?.title}!</p>
+            </div>
+            <div className='pt-[18px] '>
+                <article className='text-justify text-[14px]'>{detailArtikel?.obat}</article>
+            </div>
         </div>
     </div>
   )

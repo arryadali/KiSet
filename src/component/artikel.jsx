@@ -6,7 +6,9 @@ const Artikel = () => {
     const [input, setInput] = useState({
         judul : "",
         foto : "",
-        deskripsi : ""
+        deskripsi : "",
+        cegah : "",
+        obat : "",
       });
 
 
@@ -22,6 +24,10 @@ const Artikel = () => {
           setInput({ ...input, foto: value });
         } else if (name === "deskripsi") {
           setInput({ ...input, deskripsi: value });
+        } else if (name === "cegah") {
+            setInput({ ...input, cegah: value});
+        } else if (name === "obat") {
+            setInput({ ...input, obat:value});
         }
       };
 
@@ -33,7 +39,9 @@ const Artikel = () => {
             .post("http://localhost:5000/api/article", {
                 judul: input.judul,
                 deskripsi: input.deskripsi,
-                foto: input.foto
+                foto: input.foto,
+                cegah: input.cegah,
+                obat: input.obat,
             })
 
             console.log(response.data)
@@ -76,9 +84,27 @@ const Artikel = () => {
                         onChange={handleChange}
                         className="block border-2 rounded-[10px] w-full h-[62px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>
                     </div>
+                    <div>
+                        <label className="block font-medium text-[20px] text-[#373737] mt-[54px] uppercase">Cara mencegah</label>
+                        <input 
+                        type="text"
+                        name="deskripsi" 
+                        value={input.cegah}
+                        onChange={handleChange}
+                        className="block border-2 rounded-[10px] w-full h-[62px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>
+                    </div>
+                    <div>
+                        <label className="block font-medium text-[20px] text-[#373737] mt-[54px] uppercase">Cara mengobati</label>
+                        <input 
+                        type="text"
+                        name="deskripsi" 
+                        value={input.obat}
+                        onChange={handleChange}
+                        className="block border-2 rounded-[10px] w-full h-[62px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>
+                    </div>
                     <button 
                     type="submit"
-                    className="uppercase font-medium text-[20px] rounded-full bg-[#010C80] w-[150px] h-[55px] text-white mt-10">
+                    className="uppercase font-medium text-[20px] rounded-[5px] bg-[#010C80] w-[150px] h-[55px] text-white mt-10">
                         submit
                     </button>
                 </form>

@@ -22,7 +22,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <button className="bg-[#010C80] rounded-[10px] w-[5%] h-[40px] my-auto mr-[10%]">
+          <button className="bg-[#010C80] rounded-[5px] w-[5%] h-[40px] my-auto mr-[10%]">
             <Link to={"/login"}><p className="text-white font-semibold">Login</p></Link>
           </button>
         </nav>
