@@ -10,7 +10,7 @@ const Navbar = () => {
             <img src="../asset/logo.png" alt="" className=""/>
           </div>
 
-          <ul className='flex gap-14 ml-auto pr-[10%] pt-10 font-bold text-[1.25rem]'>
+          <ul className='flex gap-14 ml-auto pr-[7%] pt-10 font-bold text-[1.25rem]'>
             <li className='hover:text-[#010C80]'>
               <Link to={"/"}>Home</Link>
             </li>
@@ -21,6 +21,10 @@ const Navbar = () => {
               <Link to={"/artikel"}>Tulis Artikel</Link>
             </li>
           </ul>
+
+          <button className="bg-[#010C80] rounded-[10px] w-[5%] h-[40px] my-auto mr-[10%]">
+            <Link to={"/login"}><p className="text-white font-semibold">Login</p></Link>
+          </button>
         </nav>
       </div>
     </section>

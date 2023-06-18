@@ -9,7 +9,7 @@ const Home = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(()=> {
-        axios.get("https://ba06-182-253-194-51.ngrok-free.app/api/article")
+        axios.get("http://localhost:5000/api/article")
         .then((res) => {
             let hasil = res.data.getArticle;
             setData(hasil);
@@ -24,7 +24,7 @@ const Home = () => {
         try {
             setLoading(true)
             await axios.delete(
-            `localhost:5000/api/article/${id}`
+            `http://localhost:5000/api/article/${id}`
           )
           setLoading(false)
 
@@ -50,7 +50,7 @@ const Home = () => {
     <div>
         <section id="Home">
             <div className="bg-banner h-1/2 w-full">
-                <div className="bottom-0 w-[100%] text-center font-bold py-[136px] mb-[4%] ">
+                <div className="bottom-0 w-[100%] text-center font-bold py-[136px] mb-[4%]">
                     <div className="text-[40px]">
                         SELAMAT DATANG DI KISET, KISPERS !
                     </div>
@@ -87,9 +87,9 @@ const Home = () => {
                                         <Link to={`/artikel/${element._id}`}>
                                         <div className="w-[560px] justify-center ml-[1%] md:ml-[2rem] mt-[27px] h-[124px]">
                                             <p className="font-medium text-[20px]">
-                                                {element.title}
+                                                {element.title}!
                                             </p>
-                                            <article className="text-[#B6B6B6] text-[14px] mt-[10px] text-justify  overflow-hidden w-[45%] h-[55%] md:w-[100%] md:h-[70%]">
+                                            <article className="text-[#B6B6B6] text-[14px] mt-[10px] text-justify overflow-hidden w-[45%] h-[55%] md:w-[100%] md:h-[70%]">
                                                 {element.description}
                                             </article>
                                         </div>

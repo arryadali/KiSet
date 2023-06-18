@@ -30,7 +30,7 @@ const Artikel = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
             const response = await axios
-            .post("localhost:5000/api/article", {
+            .post("http://localhost:5000/api/article", {
                 judul: input.judul,
                 deskripsi: input.deskripsi,
                 foto: input.foto
@@ -41,7 +41,7 @@ const Artikel = () => {
 
     return (
         <div className="container">
-            <div className=" md:w-[83%] m-auto mt-[4rem]">
+            <div className=" md:w-[83%] m-auto mt-[4rem] mb-[4%]">
                 <p className="font-medium text-[32px] text-[#373737]">
                     Tulis Artikel
                 </p>
@@ -78,7 +78,7 @@ const Artikel = () => {
                     </div>
                     <button 
                     type="submit"
-                    className="uppercase font-medium text-[20px] rounded-full bg-[#010C80] w-[174px] h-[62px] text-white mt-10">
+                    className="uppercase font-medium text-[20px] rounded-full bg-[#010C80] w-[150px] h-[55px] text-white mt-10">
                         submit
                     </button>
                 </form>
