@@ -6,7 +6,7 @@ const About = () => {
             <div className="container">
                 <div className="w-[83%] m-auto mt-[4rem]">
                     <article className="text-[20px] font-medium text-justify">
-                        KISET ( Kita Sehat ) adalah Aplikasi KiSet ( Kita Sehat ) adalah salah satu website yang digunakan untuk mengetahui solusi penyembuhan dari berbagai penyakit yang diderita seperti batuk, pilek maupun yang lainnya. KiSet menawarkan pengguna untuk mempermudah dan mempercepat akses setiap orang dalam mendapatkan informasi mengenai penyakit yang diderita beserta solusi alternatif yang benar dalam penangananya. Dengan adanya aplikasi KiSet tersebut diharapkan dapat memberi pertolongan terhadap orang-orang yang disebabkan berbagai hal tidak dapat berkonsultasi dengan dokter maupun ahli medis secara langsung dengan tanpa harus mengunjungi rumah sakit atau tempat praktek dokter tersebut berada.  
+                        Aplikasi KiSet ( Kita Sehat ) adalah salah satu website yang digunakan untuk mengetahui solusi penyembuhan dari berbagai penyakit yang diderita seperti batuk, pilek maupun yang lainnya. KiSet menawarkan pengguna untuk mempermudah dan mempercepat akses setiap orang dalam mendapatkan informasi mengenai penyakit yang diderita beserta solusi alternatif yang benar dalam penangananya. Dengan adanya aplikasi KiSet tersebut diharapkan dapat memberi pertolongan terhadap orang-orang yang disebabkan berbagai hal tidak dapat berkonsultasi dengan dokter maupun ahli medis secara langsung dengan tanpa harus mengunjungi rumah sakit atau tempat praktek dokter tersebut berada.  
                     </article>
                 </div>
 

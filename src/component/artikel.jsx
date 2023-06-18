@@ -88,7 +88,7 @@ const Artikel = () => {
                         <label className="block font-medium text-[20px] text-[#373737] mt-[54px] uppercase">Cara mencegah</label>
                         <input 
                         type="text"
-                        name="deskripsi" 
+                        name="cegah" 
                         value={input.cegah}
                         onChange={handleChange}
                         className="block border-2 rounded-[10px] w-full h-[62px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>
@@ -97,7 +97,7 @@ const Artikel = () => {
                         <label className="block font-medium text-[20px] text-[#373737] mt-[54px] uppercase">Cara mengobati</label>
                         <input 
                         type="text"
-                        name="deskripsi" 
+                        name="obat" 
                         value={input.obat}
                         onChange={handleChange}
                         className="block border-2 rounded-[10px] w-full h-[62px] mt-3 mb-2 px-3 pb-1 focus:outline-[##010C80]"/>

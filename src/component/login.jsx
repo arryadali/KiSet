@@ -39,7 +39,7 @@ const Login = () => {
             </button>
             <Link to={"/register"}>
             <div>
-                <p className='ml-[26%] mt-[5%] text-[#6974F1] hover:text-[#4454FF]'>Register?</p>
+                <p className='ml-[22%] mt-[5%] text-[#6974F1] hover:text-[#4454FF]'>Belum punya akun?</p>
             </div>
             </Link>
         </div>
