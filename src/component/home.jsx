@@ -9,7 +9,7 @@ const Home = () => {
     const [loading, setLoading] = useState(false)
 
     useEffect(()=> {
-        axios.get("http://localhost:5000/api/article")
+        axios.get("https://wild-pleat-crow.cyclic.app/api/article")
         .then((res) => {
             let hasil = res.data.getArticle;
             setData(hasil);
@@ -24,7 +24,7 @@ const Home = () => {
         try {
             setLoading(true)
             await axios.delete(
-            `http://localhost:5000/api/article/${id}`
+            `https://wild-pleat-crow.cyclic.app/api/article/${id}`
           )
           setLoading(false)
 

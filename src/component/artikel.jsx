@@ -36,7 +36,7 @@ const Artikel = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
             const response = await axios
-            .post("http://localhost:5000/api/article", {
+            .post("https://wild-pleat-crow.cyclic.app/api/article", {
                 judul: input.judul,
                 deskripsi: input.deskripsi,
                 foto: input.foto,

@@ -8,7 +8,7 @@ const Detailartikel = () => {
     const [detailArtikel, setDetailArtikel] = useState({})
 
     useEffect(()=> {
-        axios.get(`http://localhost:5000/api/article/${id}`)
+        axios.get(`https://wild-pleat-crow.cyclic.app/api/article/${id}`)
         .then((res) => {
             let hasil = res.data;
             setDetailArtikel(hasil);
